@@ -8,10 +8,10 @@ import java.util.List;
 public class Employee {
     @SerializedName("f_name")
     @Expose
-    private String fName;
+    private String name;
     @SerializedName("l_name")
     @Expose
-    private String lName;
+    private String surname;
     @SerializedName("birthday")
     @Expose
     private String birthday;
@@ -22,20 +22,20 @@ public class Employee {
     @Expose
     private List<Specialty> specialty = null;
 
-    public String getfName() {
-        return fName;
+    public String getName() {
+        return name;
     }
 
-    public void setfName(String fName) {
-        this.fName = fName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getlName() {
-        return lName;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setlName(String lName) {
-        this.lName = lName;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     public String getBirthday() {
